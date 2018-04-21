@@ -15,6 +15,9 @@
 .env.development.local
 .env.test.local
 .env.production.local
+layout.xd
+grid-test.html
+card-test.html
 
 npm-debug.log*
 yarn-debug.log*
