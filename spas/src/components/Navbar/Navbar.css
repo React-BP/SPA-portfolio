@@ -1,0 +1,7 @@
+.nav {
+   grid-area: nav; 
+   grid-column: span 9;
+}
+.navbar {
+    background-color:rgba(0, 0, 0, 0.5);
+ }

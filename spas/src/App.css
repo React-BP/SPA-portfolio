@@ -1,28 +1,98 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+body {
+  font-family: 'Lato', sans-serif;
   color: white;
+  text-align: center;
+
 }
 
-.App-title {
-  font-size: 1.5em;
+p {
+  font-size: 16px;
+  font-weight: 300;
+  text-align: left;
 }
 
-.App-intro {
-  font-size: large;
+.lead {
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 30px;
+
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+h1 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 100;
+  font-size: 3em;
+  margin: 10px;
+
 }
+
+.display {
+  font-size: 5em;
+  color: cyan;
+}
+
+h3 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 0px;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: minmax(100px, auto);
+  grid-template-areas: 
+    "nav"  
+    "billboard"
+    "work"
+    "gallery"
+    "sidebar"
+    "footer";
+}
+
+.card-box {
+
+  grid-column: 2/9;
+  grid-row: 20/25;
+
+}
+
+.card {
+  transition: 0.3s;
+  color: black;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-container {
+  padding: 2px 16px;
+}
+
+.card-content {
+  grid-column: auto;
+}
+
+.card-grid > div {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+}
+.card-grid > div img {
+  max-width: 100%;
+}
+.text {
+  padding: 0 20px 20px;
+}
+.text > button {
+  background: #2c3824;
+  border: 0;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  }
+
