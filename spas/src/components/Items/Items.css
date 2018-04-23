@@ -1,22 +1,21 @@
 .work-about { grid-area: work-about; grid-column: 1/4;}
 .work-image { grid-area: work-image; grid-column: 4/6;}
 
-.grid-container {
+.work-grid-container {
   display: grid;
   grid-template-columns: repeat(6,1fr);
   grid-template-rows: minmax(50px,auto);
   grid-template-areas:
     'work-about work-image';
   grid-gap: 10px;
-  background-color: rgb(255, 255, 255, 0.5);
-  color: darkgray;
+  align-items: center;
+  color: black;
   padding: 10px;
-  margin: auto 0px auto 0px;
   background-color: none;
   text-align: center;
   padding: 20px 0;
   font-size: 15px;
 }
-.content-wrapper {
+.work-content-wrapper {
     padding: 30px;
 }

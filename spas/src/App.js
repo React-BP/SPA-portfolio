@@ -4,11 +4,10 @@ import Wrapper from "./components/Wrapper/Wrapper"
 import Navbar from "./components/Navbar/Navbar";
 import Billboard from "./components/Billboard/Billboard";
 import Items from './components/Items/Items';
-// import About from './components/About/About';
+import About from './components/About/About';
 import Card from "./components/Card/Card";
 import cardData from "./card-data.json";
-
-
+import Footer from "./components/Footer/Footer";
 
 class App extends Component {
   state = {
@@ -20,11 +19,10 @@ class App extends Component {
       <Wrapper>
         <Navbar /> 
         <Billboard />
+        <About />
         <Items />
-        {/* <About /> */}
         <div className="card-box">
             <div className="card-content">
-              Cards go here
               <main className="card-grid">
                 {this.state.cardData.map(data => (
                   <Card 
@@ -39,6 +37,7 @@ class App extends Component {
               </main>
           </div>
         </div>
+        <Footer />
       </Wrapper>
       </div>      
     );

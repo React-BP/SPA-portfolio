@@ -5,13 +5,15 @@ class Navbar extends Component {
     render() {
         return (
             <nav className="navbar">
-        <ul>
-            <li>React BP</li> 
-            <li>About</li>
-            <li>Work</li>
-            <li>Store</li>
-        </ul>
-    </nav>
+                <div className="navbar-line">
+                    <ul>
+                        <li>React BP</li> 
+                        <li>About</li>
+                        <li>Work</li>
+                        <li>Store</li>
+                    </ul>
+                </div>
+            </nav>
         );
     }
 }

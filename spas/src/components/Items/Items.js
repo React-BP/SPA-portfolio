@@ -11,12 +11,12 @@ const Items = () => {
             bgImageAlt="cloud forest"
             strength={200}
             >
-            <div style={{ height: 'auto' }} className="work-items">
-                <div className="grid-container">
+            <div style={{ height: '100vh' }} className="work-items">
+                <div className="work-grid-container">
                     <div className="work-about">
-                        <div className="content-wrapper">
+                        <div className="work-content-wrapper">
                             <h3>Featured Portfolio Item</h3>
-                            <h1>Clicky Game</h1>
+                            <h1>Portfolio Item Title</h1>
                             <p className="lead">Wench lad jolly boat Sail ho tack brig overhaul scuttle quarterdeck come about code of conduct marooned rigging boatswain fluke fire ship bowsprit transom Blimey Jolly Roger Plate Fleet parrel knave smartly.</p>
                         </div>
                     </div>
