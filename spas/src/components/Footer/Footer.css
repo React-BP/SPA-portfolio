@@ -1,0 +1,20 @@
+.footer {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 80px;
+    width: 100%;
+    background: transparent;
+ }
+
+.footer-line {
+    border-top: 1px solid white;
+    height: 80px;
+    margin: 20px;
+}
+
+.footer-line ul li { 
+    display: inline; 
+    margin: 0 5px 0 5px;
+    float: right;
+}

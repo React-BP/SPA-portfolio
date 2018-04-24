@@ -1,7 +1,18 @@
-.nav {
-   grid-area: nav; 
-   grid-column: span 9;
-}
+
 .navbar {
-    background-color:rgba(0, 0, 0, 0.5);
+    position:fixed;
+    left:0px;
+    top:0px;
+    height:40px;
+    width:100%;
+    background:transparent;
+ }
+.navbar-line {
+    border-bottom: 1px solid white;
+    height: 40px;
+    margin: 10px 20px 10px 20px;
+}
+ .navbar-line ul li {
+    display: inline;
+    margin: 0 5px 0 5px;
  }

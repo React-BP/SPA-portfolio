@@ -10,6 +10,10 @@
   grid-template-areas: "billboard-contents";
 }
 
+.about-items {
+  grid-area: about;
+  grid-column: span 9;
+}
 
 .work-items {
   grid-area: work;
