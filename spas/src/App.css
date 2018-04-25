@@ -64,6 +64,13 @@ h3 {
     "footer";
 }
 
+.vertical-center{
+  position: absolute;
+  top:50%;
+  left: 0%;
+  transform:translate(0%, -50%);
+  -webkit-transform:translate(0%, -50%);
+}
 /* CARD STYLE */
 .card-box {
   margin: 50px 0 100px 0;

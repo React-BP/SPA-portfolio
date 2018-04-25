@@ -1,12 +1,13 @@
-.about-about { grid-area: about-about; grid-column: 1/4;}
-.about-image { grid-area: about-image; grid-column: 4/6;}
+.about-image { grid-area: about-image; grid-column: 1/4;}
+.about-about { grid-area: about-about; grid-column: 4/7;}
+
 
 .about-grid-container {
   display: grid;
   grid-template-columns: repeat(6,1fr);
   grid-template-rows: minmax(50px,auto);
   grid-template-areas:
-    'about-about about-image';
+    'about-image about-about';
   grid-gap: 10px;
   align-items: center;
   color: black;

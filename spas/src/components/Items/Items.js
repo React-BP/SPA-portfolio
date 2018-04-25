@@ -1,10 +1,10 @@
 import React from 'react';
-import { Parallax, Background } from 'react-parallax';
+import { Parallax } from 'react-parallax';
 import "./Items.css";
 
 const Items = () => {
     return (
-        <div className="work-items">
+        <div className="work-items" id="work">
         <Parallax
             blur={{ min: -15, max: 15 }}
             bgImage={require('../../images/clouds-fog-forest-9754.jpg')}
@@ -12,7 +12,7 @@ const Items = () => {
             strength={200}
             >
             <div style={{ height: '100vh' }} className="work-items">
-                <div className="work-grid-container">
+                <div className="work-grid-container vertical-center">
                     <div className="work-about">
                         <div className="work-content-wrapper">
                             <h3>Featured Portfolio Item</h3>
