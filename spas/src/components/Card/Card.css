@@ -10,6 +10,9 @@
   }
   .card-grid > div img {
     max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+
   }
   .text {
     padding: 0 20px 20px;

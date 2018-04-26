@@ -7,6 +7,7 @@ import React, { Component } from 'react';
 // COMPONENT IMPORTS
 import Wrapper from "./components/Wrapper/Wrapper"
 import Navbar from "./components/Navbar/Navbar";
+import Dotnav from "./components/Dotnav/Dotnav";
 import Billboard from "./components/Billboard/Billboard";
 import Items from './components/Items/Items';
 import About from './components/About/About';
@@ -21,7 +22,12 @@ import cardData from "./card-data.json";
 import './App.css';
 
 class App extends Component {
-  //SUPER PROPS
+  //STATE
+  state = { 
+    cardData: cardData,
+  };
+  //FOR REACT PAGE SCROLLER
+  /* //SUPER PROPS
   constructor(props) {
     super(props);
     this.state = { 
@@ -45,13 +51,14 @@ class App extends Component {
     }
     this.setState({ currentPage: number });
   };
-
+ */
   render() {
     return (
       <div className="App">
       {/* <ReactPageScroller ref={c => this.ReactPageScroller = c} pageOnChange={this.pageOnChange}> */}
       <Wrapper>
         <Navbar /> 
+        <Dotnav />
         <Billboard />
         <About />
         <Items />

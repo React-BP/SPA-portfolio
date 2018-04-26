@@ -4,7 +4,7 @@ import "./Items.css";
 
 const Items = () => {
     return (
-        <div className="work-items" id="work">
+        <div className="work-items" id="work-item">
         <Parallax
             blur={{ min: -15, max: 15 }}
             bgImage={require('../../images/clouds-fog-forest-9754.jpg')}

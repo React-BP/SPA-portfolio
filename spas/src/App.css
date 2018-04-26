@@ -13,7 +13,7 @@ body {
   color: white;
   text-align: center;
 }
-
+/* TYPOGRAPHY STYLES */
 p {
   font-size: 16px;
   font-weight: 300;
@@ -25,7 +25,7 @@ p {
   font-weight: 300;
   text-align: center;
   letter-spacing: 1px;
-  margin: 30px;
+  margin: 0 30px 0 30px;
 
 }
 
@@ -34,7 +34,6 @@ h1 {
   font-weight: 100;
   font-size: 3em;
   margin: 10px;
-
 }
 
 .display {
@@ -45,15 +44,17 @@ h1 {
 h3 {
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 700;
-  font-size: 1em;
+  font-size: 15px;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
+/* SETS UP THE MAIN CSS GRID FOR THE WRAPPER */
 .wrapper {
   display: grid;
   grid-gap: 0px;
   grid-template-columns: repeat(9, 1fr);
-  grid-template-rows: minmax(100px, auto);
+  grid-template-rows: minmax(50px, auto);
   grid-template-areas: 
     "navbar"
     "billboard"
@@ -64,13 +65,15 @@ h3 {
     "footer";
 }
 
-.vertical-center{
+/* CENTER THINGS VERTICALLY IN THE VIEW PORT */
+.vertical-center {
   position: absolute;
-  top:50%;
+  top: 50%;
   left: 0%;
   transform:translate(0%, -50%);
   -webkit-transform:translate(0%, -50%);
 }
+
 /* CARD STYLE */
 .card-box {
   margin: 50px 0 100px 0;
@@ -78,3 +81,12 @@ h3 {
   grid-row: 20/25;
 }
 
+/* MEDIA QUERY TO TURN OFF DOT NAV */
+@media only screen and (max-device-width : 480px) {
+	.dot-nav {
+		display: none;
+	}
+  .billboard-box {
+    padding-right: 0px;
+  }
+}

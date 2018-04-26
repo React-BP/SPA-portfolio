@@ -1,79 +1,33 @@
 import React, { Component } from 'react';
+import "./Dotnav.css";
 
 class Dotnav extends Component {
     render() {
         return (
-            <div>
-                
+            <div className="dot-nav">
+				<ul className="vertical-center">
+					<li><a href="./">
+						<svg width="7" id="dot" data-name="dot" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.88 25.88">
+							<title>dot</title>
+							<circle cx="12.94" cy="12.94" r="12.94" fill="#fff"/>
+						</svg>
+					</a></li>
+					<li><a href="#about">
+						<svg width="7" id="dot" data-name="dot" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.88 25.88">
+							<title>dot</title>
+							<circle cx="12.94" cy="12.94" r="12.94" fill="#fff"/>
+						</svg>
+					</a></li>
+					<li><a href="#work">
+						<svg width="7" id="dot" data-name="dot" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.88 25.88">
+							<title>dot</title>
+							<circle cx="12.94" cy="12.94" r="12.94" fill="#fff"/>
+						</svg>
+					</a></li>
+				</ul>
             </div>
         );
     }
 }
 
 export default Dotnav;
-
-/**
- * menu.js v1.0.0
- * http://www.codrops.com
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- * 
- * Copyright 2014, Codrops
- * http://www.codrops.com
- */
-;( function( window ) {
-
-	'use strict';
-
-	function extend( a, b ) {
-		for( var key in b ) { 
-			if( b.hasOwnProperty( key ) ) {
-				a[key] = b[key];
-			}
-		}
-		return a;
-	}
-
-	function DotNav( el, options ) {
-		this.nav = el;
-		this.options = extend( {}, this.options );
-  		extend( this.options, options );
-  		this._init();
-	}
-
-	DotNav.prototype.options = {};
-
-	DotNav.prototype._init = function() {
-		// special case "dotstyle-hop"
-		var hop = this.nav.parentNode.className.indexOf( 'dotstyle-hop' ) !== -1;
-
-		var dots = [].slice.call( this.nav.querySelectorAll( 'li' ) ), current = 0, self = this;
-
-		dots.forEach( function( dot, idx ) {
-			dot.addEventListener( 'click', function( ev ) {
-				ev.preventDefault();
-				if( idx !== current ) {
-					dots[ current ].className = '';
-
-					// special case
-					if( hop && idx < current ) {
-						dot.className += ' current-from-right';
-					}
-
-					setTimeout( function() {
-						dot.className += ' current';
-						current = idx;
-						if( typeof self.options.callback === 'function' ) {
-							self.options.callback( current );
-						}
-					}, 25 );						
-				}
-			} );
-		} );
-	}
-
-	// add to global namespace
-	window.DotNav = DotNav;
-
-})( window );

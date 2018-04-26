@@ -2,15 +2,15 @@
     position: fixed;
     left: 0px;
     bottom: 0px;
-    height: 80px;
+    height: 60px;
     width: 100%;
-    background: transparent;
+    background: rgb(0, 0, 0, .4);
  }
 
 .footer-line {
     border-top: 1px solid white;
     height: 80px;
-    margin: 20px;
+    margin: 0;
 }
 
 .footer-line ul li { 
