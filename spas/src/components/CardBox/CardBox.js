@@ -1,24 +1,14 @@
-import React, { Component } from 'react';
-import Card from '../Card/Card'
+import React from 'react';
+import '../CardBox/CardBox.css'
 
 const CardBox = props => (
-            <div className="card-box">
+            <div className="card-box" id="work">
                 <div className="card-content">
                     <main className="card-grid">
-                        {props.state.cardData.map(data => (
-                        <Card 
-                        key={data.id}
-                        img={data.img}
-                        alt={data.alt}
-                        title={data.title}
-                        desc={data.desc}
-                        button={data.button}
-                        />
-                        ))}
+                        {props.children}
                     </main>
                 </div>
             </div>
         );
-    
 
 export default CardBox;

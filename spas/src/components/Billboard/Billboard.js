@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
 import './Billboard.css';
-import Arrow from '../Arrow/Arrow';
 
-
-import { Parallax, Background } from 'react-parallax';
+import { Parallax } from 'react-parallax';
 
 
 class Billboard extends Component {
   render() {
     return (
-    <div className="billboard">
+    <div className="billboard" id="billboard">
     <Parallax
       blur={0}
      /*  bgImage={ # }
@@ -17,10 +15,9 @@ class Billboard extends Component {
       strength={200}
     >
       <div style={{ height: '100vh' }} >
-        <div className="billboard-box">
+        <div className="billboard-box vertical-center">
           <h1 className="display">React BP</h1>
           <p className="lead">Boilerplate npm packages that contain components and functionality for a react portfolio app, a basic web store and a more complex web store. These packages contain everything you need to create a sophisticated react apps.</p>
-        <Arrow/>
         </div>
       </div>
     </Parallax>

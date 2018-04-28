@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.navbar { 
+    grid-area: navbar; 
+    grid-column: 1 / 10;
+    grid-row: 1 / 1;
+    z-index: 1;
+}
+.main { 
+    grid-area: main; 
+    grid-column: 1 / 9;
+    grid-row: 2 / 16;
+    z-index: 2;
+  }
+
+.dotnav { 
+    grid-area: dotnav; 
+    grid-column: 9 / 10;
+    grid-row: 2 / 16;
+    z-index: 3;
+}
+
+.footer { 
+  grid-area: footer; 
+    grid-column: 1 / 10;
+    grid-row: 16 / 18;
+    z-index: 4;
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'navbar'
+    'main'
+    'dotnav'
+    'footer';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  margin: 0px;
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1>Grid Layout</h1>
+
+<p>This grid layout contains six columns and three rows:</p>
+
+<div class="grid-container">
+  <div class="navbar">Header</div>
+  <div class="main">Main</div>
+  <div class="dotnav">Dotnav</div>  
+  <div class="footer">Footer</div>
+</div>
+
+</body>
+</html>

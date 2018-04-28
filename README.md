@@ -1,2 +1,2 @@
-# SPAS
-React boilerplate single page app using sequelize/MySQL as database
+# SPA
+React boilerplate single page portfolio app.
