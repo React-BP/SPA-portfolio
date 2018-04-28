@@ -3,8 +3,8 @@ import "./Card.css";
 
 
 const Card = props => (
-      <div className="card">
-        <img src= {props.img} alt={props.alt} />
+      <div className="card" id={props.id}>
+        <img src={props.img} alt={props.alt} />
         <div className="text">
           <h3>{props.title}</h3>
           <p>{props.desc}</p>
