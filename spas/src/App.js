@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 
 // EXTERNAL NPM IMPORTS
-//import ReactPageScroller from "react-page-scroller";
+import ReactModal from 'react-modal';
 
 // COMPONENT IMPORTS
 import Wrapper from "./components/Wrapper/Wrapper"
@@ -14,6 +14,7 @@ import About from './components/About/About';
 import CardBox from "./components/CardBox/CardBox";
 import Card from "./components/Card/Card";
 import Footer from "./components/Footer/Footer";
+import DetailModal from "./components/DetailModal/DetailModal";
 
 // DATA IMPORT FOR CARDS
 import cardData from "./card-data.json";
@@ -21,41 +22,32 @@ import cardData from "./card-data.json";
 // STYLE IMPORTS
 import './App.css';
 
+ReactModal.setAppElement('#root');
+
 class App extends Component {
-  //STATE
-  state = { 
-    cardData: cardData,
-  };
-  //FOR REACT PAGE SCROLLER
-  /* //SUPER PROPS
+
+//SUPER PROPS
   constructor(props) {
     super(props);
     this.state = { 
       cardData: cardData, 
-      currentPage: 0, 
-      showMe: false };
-    this.ReactPageScroller = null;
-  };
-
-  //GOES TO SPECIFIC PAGE ON SELECT
-  goToPage = (eventKey) => {
-    this.ReactPageScroller.goToPage(eventKey);
+      showModal: false
+    };
+    this.handleOpenModal = this.handleOpenModal.bind(this);
+    this.handleCloseModal = this.handleCloseModal.bind(this);
   }
-
-  //GRABS PAGE NUMBER ON PAGE CHANGE
-  pageOnChange = (number) => {
-    if (number === 0) {
-      this.setState({ showMe: false });
-    } else {
-      this.setState({ showMe: true });
-    }
-    this.setState({ currentPage: number });
+  
+  handleOpenModal () {
+    this.setState({ showModal: true });
+  }
+  
+  handleCloseModal () {
+    this.setState({ showModal: false });
   };
- */
+  
   render() {
     return (
       <div className="App">
-      {/* <ReactPageScroller ref={c => this.ReactPageScroller = c} pageOnChange={this.pageOnChange}> */}
       <Wrapper>
         <Navbar /> 
         <Dotnav />
@@ -71,12 +63,20 @@ class App extends Component {
                   title={data.title}
                   desc={data.desc}
                   button={data.button}
+                  onClick={this.handleOpenModal}
                   />
                 ))}
         </CardBox>
         <Footer />
+        {/* MODAL*/}
+        <DetailModal 
+            isOpen={this.state.showModal}
+            contentLabel="onRequestClose Example"
+            onRequestClose={this.handleCloseModal}
+            className="Modal"
+            overlayClassName="Overlay"
+          />
       </Wrapper>
-      {/* </ReactPageScroller> */}
       </div>      
     );
   }

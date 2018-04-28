@@ -6,13 +6,11 @@ class Navbar extends Component {
         return (
             <nav className="navbar">
                 <div className="navbar-line">
-                    <ul>
-                        <li><img width="40px" src={require('../../images/reactBP.png')} alt="React BP" /></li>
-                        <li><a href="./">React BP</a></li> 
-                        <li><a href="#about">About</a></li> 
-                        <li><a href="#work">Work</a></li> 
+                        <div><img width="40px" src={require('../../images/reactBP.png')} alt="React BP" /></div>
+                        <div><a href="./">React BP</a></div> 
+                        <div><a href="#about">About</a></div> 
+                        <div><a href="#work">Work</a></div> 
                         {/* <li><a href="#store">Store</a></li>  */}
-                    </ul>
                 </div>
             </nav>
         );

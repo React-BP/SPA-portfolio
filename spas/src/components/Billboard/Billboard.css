@@ -13,15 +13,3 @@
     padding-right: 40px;
   
   }
-/* .billboard {
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-template-rows: minmax(50px,auto);
-    grid-template-areas: 
-      "billboard-contents";
-    background-color: none;
-    text-align: center;
-    padding: 0px;
-    font-size: 30px;
-    margin: 0px;
-} */ 
