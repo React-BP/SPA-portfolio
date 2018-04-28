@@ -1,15 +1,9 @@
-.work-about { grid-area: work-about; grid-column: 1/4;}
-.work-image { grid-area: work-image; grid-column: 4/7;}
-
 .work-grid-container {
   display: grid;
-  grid-template-columns: repeat(6,1fr);
-  grid-template-rows: minmax(50px,auto);
-  grid-template-areas:
-    'work-about work-image';
-  grid-gap: 10px;
-  align-items: center;
-  color: black;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 20px;
+  align-items: stretch;
+  color: white;
   padding: 10px;
   background-color: none;
   text-align: center;

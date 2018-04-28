@@ -7,6 +7,7 @@
     "compass-mixins": "^0.12.10",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-modal": "^3.4.4",
     "react-page-scroller": "^1.2.0",
     "react-parallax": "^1.6.2",
     "react-router-dom": "^4.2.2",

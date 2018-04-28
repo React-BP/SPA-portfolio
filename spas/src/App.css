@@ -48,6 +48,9 @@ h3 {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+.text-link {
+  padding-bottom: 20px;
+}
 
 /* SETS UP THE MAIN CSS GRID FOR THE WRAPPER */
 .wrapper {
@@ -88,5 +91,8 @@ h3 {
 	}
   .billboard-box {
     padding-right: 0px;
+  }
+  .downArrow {
+    display:  none;
   }
 }

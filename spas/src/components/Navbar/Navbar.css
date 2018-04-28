@@ -13,14 +13,17 @@
  }
 
 .navbar-line {
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
     border-bottom: 1px solid white;
-    height: 40px;
+    height: 100%;
 }
 
- .navbar-line ul li {
-    display: inline-block;
+ .navbar-line div {
     margin: 0 5px 0 5px;
-    vertical-align: middle;
  }
 
  .navbar a {

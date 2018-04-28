@@ -8,7 +8,7 @@ const Card = props => (
         <div className="text">
           <h3>{props.title}</h3>
           <p>{props.desc}</p>
-          <button>{props.button}</button>
+          <button onClick={props.onClick}>{props.button}</button>
         </div>
       </div>
 );

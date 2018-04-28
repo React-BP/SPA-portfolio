@@ -8,13 +8,27 @@
  }
 
 .footer-line {
+    display: flex; 
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: stretch;
     border-top: 1px solid white;
-    height: 80px;
+    height: 100%;
     margin: 0;
 }
 
-.footer-line ul li { 
-    display: inline; 
+.footer-line div a {
     margin: 0 5px 0 5px;
-    float: right;
+    text-decoration: none;
+    color:white;
+}
+
+.footer-line div a:hover {
+    text-decoration: none;
+    color:chartreuse;
+}
+
+#icon:hover {
+    fill: chartreuse;
 }
