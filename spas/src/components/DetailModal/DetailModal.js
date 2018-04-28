@@ -12,6 +12,7 @@ class DetailModal extends Component {
                 onRequestClose={this.props.onRequestClose}
                 className="Modal"
                 overlayClassName="Overlay"
+                data={this.props.data}
                 >
                 <div className="work-grid-container vertical-center">
                     <div className="work-about">

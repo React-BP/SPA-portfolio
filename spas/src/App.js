@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 
 // EXTERNAL NPM IMPORTS
+// REACT MODAL HANDLE THE ITEM DETAIL LIGHTBOX
 import ReactModal from 'react-modal';
 
 // COMPONENT IMPORTS
@@ -16,7 +17,7 @@ import Card from "./components/Card/Card";
 import Footer from "./components/Footer/Footer";
 import DetailModal from "./components/DetailModal/DetailModal";
 
-// DATA IMPORT FOR CARDS
+// DATA IMPORT FOR CARDS / PORTFOLIO ITEMS
 import cardData from "./card-data.json";
 
 // STYLE IMPORTS
@@ -55,9 +56,11 @@ class App extends Component {
         <About />
         <Items />
         <CardBox>
+        {/* THIS MAPS AND PASSES THE DATA FROM YOUR CARD-DATA JSON TO YOUR CARDS */}
         {this.state.cardData.map(data => (
                   <Card 
                   key={data.id}
+                  id={data.id}
                   img={data.img}
                   alt={data.alt}
                   title={data.title}
@@ -68,14 +71,15 @@ class App extends Component {
                 ))}
         </CardBox>
         <Footer />
-        {/* MODAL*/}
+        {/* MODAL PROPS ARE PASSED TO THE DETAIL LIGHTBOX */}
         <DetailModal 
             isOpen={this.state.showModal}
             contentLabel="onRequestClose Example"
             onRequestClose={this.handleCloseModal}
             className="Modal"
             overlayClassName="Overlay"
-          />
+            data={this.state.cardData}
+         />
       </Wrapper>
       </div>      
     );
