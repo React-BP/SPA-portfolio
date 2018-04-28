@@ -1,7 +1,7 @@
 {
   "name": "spas",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "aos": "^2.2.0",
     "compass-mixins": "^0.12.10",
