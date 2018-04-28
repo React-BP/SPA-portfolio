@@ -15,7 +15,8 @@ class Billboard extends Component {
       strength={200}
     >
       <div style={{ height: '100vh' }} >
-        <div className="billboard-box vertical-center">
+        <div className="billboard-box">
+          <img width="250px" alt="React BP" src={require("../../images/reactBP.png")}/>
           <h1 className="display">React BP</h1>
           <p className="lead">Boilerplate npm packages that contain components and functionality for a react portfolio app, a basic web store and a more complex web store. These packages contain everything you need to create a sophisticated react apps.</p>
         </div>
